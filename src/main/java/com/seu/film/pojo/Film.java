@@ -11,8 +11,12 @@ public class Film {
     private String type;
     private String introduce;
     private String src;
+    private int times;
 
-    public Film(int id, String name, int length, String director, String actors, String date, String image, String type, String introduce, String src) {
+    public Film() {
+    }
+
+    public Film(int id, String name, int length, String director, String actors, String date, String image, String type, String introduce, String src, int times) {
         this.id = id;
         this.name = name;
         this.length = length;
@@ -23,9 +27,7 @@ public class Film {
         this.type = type;
         this.introduce = introduce;
         this.src = src;
-    }
-
-    public Film() {
+        this.times = times;
     }
 
     public int getId() {
@@ -108,6 +110,14 @@ public class Film {
         this.src = src;
     }
 
+    public int getTimes() {
+        return times;
+    }
+
+    public void setTimes(int times) {
+        this.times = times;
+    }
+
     @Override
     public String toString() {
         return "Film{" +
@@ -121,6 +131,7 @@ public class Film {
                 ", type='" + type + '\'' +
                 ", introduce='" + introduce + '\'' +
                 ", src='" + src + '\'' +
+                ", times=" + times +
                 '}';
     }
 }
