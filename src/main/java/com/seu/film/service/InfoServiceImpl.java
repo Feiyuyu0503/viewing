@@ -67,6 +67,7 @@ public class InfoServiceImpl implements InfoService{
             }
         }catch (Exception e){
             System.out.println(e);
+            resultDTO.setCode(0);//插入异常
             resultDTO.setMsg("注册失败！");
         }
         //如果希望注册成功，则立即登录，可能需要查询一次，那么可以在该业务中查询用户
