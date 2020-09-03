@@ -15,4 +15,5 @@ public interface InfoService {
     ResultDTO<Info> findInfoByInfo(Info info);
 
     ResultDTO<Info> addInfo(Info info);
+
 }

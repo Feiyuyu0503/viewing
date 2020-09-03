@@ -92,4 +92,5 @@ public class TestController {
         System.out.println(info.toString());
         return infoService.addInfo(info);
     }
+
 }

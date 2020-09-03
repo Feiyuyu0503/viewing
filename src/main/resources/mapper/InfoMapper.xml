@@ -19,4 +19,5 @@
         INSERT INTO info (name,pwd)
         VALUES (#{name},#{pwd})
     </insert>
+
 </mapper>

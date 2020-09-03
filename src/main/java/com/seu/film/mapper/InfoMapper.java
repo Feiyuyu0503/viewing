@@ -17,4 +17,5 @@ public interface InfoMapper {
     List<Info> findInfoByInfo(Info info);
     //DML INSERT UPDATE DELETE
     int addInfo(Info info);
+
 }

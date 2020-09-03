@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 @Controller
-@RequestMapping("film")
+//@RequestMapping("film")
 public class FilmController {
     @Autowired
     FilmService filmService;
