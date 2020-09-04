@@ -20,8 +20,10 @@ public class StorageServiceImpl implements StorageService {
         try {
             int i = storageMapper.addStorage(storage);
             if(i>0){
+                resultDTO.setCode(1);
                 resultDTO.setMsg("收藏成功！");
             }else {
+                resultDTO.setCode(0);
                 resultDTO.setMsg("收藏失败！");
             }
         }catch (Exception e){

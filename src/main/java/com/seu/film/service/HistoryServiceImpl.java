@@ -29,7 +29,7 @@ public class HistoryServiceImpl implements HistoryService {
             //resultDTO.setCode(0);//插入异常
             resultDTO.setMsg("添加失败！");
         }
-        //如果希望注册成功，则立即登录，可能需要查询一次，那么可以在该业务中查询用户
+
         return resultDTO;
     }
 }
